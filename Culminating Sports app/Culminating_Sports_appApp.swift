@@ -11,7 +11,7 @@ import SwiftUI
 struct Culminating_Sports_appApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListItemView(item: boysSecondTeamSoccer)
         }
     }
 }

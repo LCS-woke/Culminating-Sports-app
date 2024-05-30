@@ -7,15 +7,18 @@
 
 import SwiftUI
 
-struct ContentView:  Identifiable {
+struct Team:  Identifiable {
     let id = UUID()
     let name: String
     let image: String
     let lcsScore: Int
     let oppScore: Int
     let lcsRec: String
+    let oppName: String
+    let lcs: String
 }
 
-let boysSecondTeamSoccer = ContentView(name: "Boys Second Soccer", image: "Soccer", lcsScore: <#T##Int#>, oppScore: <#T##Int#>, lcsRec: <#T##String#>)
+let boysSecondTeamSoccer = Team(name: "Boys Second Soccer", image: "Soccer", lcsScore: 3, oppScore: 2, lcsRec: "23-4'", oppName: "RSGC", lcs: "LCS")
+
 
 

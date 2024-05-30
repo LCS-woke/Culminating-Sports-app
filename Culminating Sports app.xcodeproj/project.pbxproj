@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4B42C0B92C08D31C00914158 /* Culminating_Sports_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0B82C08D31C00914158 /* Culminating_Sports_appApp.swift */; };
-		4B42C0BB2C08D31C00914158 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0BA2C08D31C00914158 /* ContentView.swift */; };
+		4B42C0BB2C08D31C00914158 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0BA2C08D31C00914158 /* Team.swift */; };
 		4B42C0BD2C08D31E00914158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B42C0BC2C08D31E00914158 /* Assets.xcassets */; };
 		4B42C0C02C08D31E00914158 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B42C0BF2C08D31E00914158 /* Preview Assets.xcassets */; };
-		4B42C0CA2C08D31E00914158 /* Culminating_Sports_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0C92C08D31E00914158 /* Culminating_Sports_appTests.swift */; };
-		4B42C0D42C08D31E00914158 /* Culminating_Sports_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0D32C08D31E00914158 /* Culminating_Sports_appUITests.swift */; };
-		4B42C0D62C08D31E00914158 /* Culminating_Sports_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0D52C08D31E00914158 /* Culminating_Sports_appUITestsLaunchTests.swift */; };
+		4B42C0E52C08D9A500914158 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0E42C08D9A500914158 /* ListItemView.swift */; };
+		4B42C0E72C08DC3F00914158 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0E62C08DC3F00914158 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +35,13 @@
 /* Begin PBXFileReference section */
 		4B42C0B52C08D31C00914158 /* Culminating Sports app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Culminating Sports app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B42C0B82C08D31C00914158 /* Culminating_Sports_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culminating_Sports_appApp.swift; sourceTree = "<group>"; };
-		4B42C0BA2C08D31C00914158 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B42C0BA2C08D31C00914158 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		4B42C0BC2C08D31E00914158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B42C0BF2C08D31E00914158 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B42C0C52C08D31E00914158 /* Culminating Sports appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Culminating Sports appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B42C0C92C08D31E00914158 /* Culminating_Sports_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culminating_Sports_appTests.swift; sourceTree = "<group>"; };
 		4B42C0CF2C08D31E00914158 /* Culminating Sports appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Culminating Sports appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B42C0D32C08D31E00914158 /* Culminating_Sports_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culminating_Sports_appUITests.swift; sourceTree = "<group>"; };
-		4B42C0D52C08D31E00914158 /* Culminating_Sports_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Culminating_Sports_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B42C0E42C08D9A500914158 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		4B42C0E62C08DC3F00914158 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				4B42C0B72C08D31C00914158 /* Culminating Sports app */,
-				4B42C0C82C08D31E00914158 /* Culminating Sports appTests */,
-				4B42C0D22C08D31E00914158 /* Culminating Sports appUITests */,
 				4B42C0B62C08D31C00914158 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,10 +90,10 @@
 		4B42C0B72C08D31C00914158 /* Culminating Sports app */ = {
 			isa = PBXGroup;
 			children = (
-				4B42C0E22C08D5F000914158 /* Sports */,
 				4B42C0B82C08D31C00914158 /* Culminating_Sports_appApp.swift */,
-				4B42C0BC2C08D31E00914158 /* Assets.xcassets */,
+				4B42C0E22C08D5F000914158 /* Model */,
 				4B42C0E32C08D61800914158 /* Views */,
+				4B42C0BC2C08D31E00914158 /* Assets.xcassets */,
 				4B42C0BE2C08D31E00914158 /* Preview Content */,
 			);
 			path = "Culminating Sports app";
@@ -111,34 +107,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4B42C0C82C08D31E00914158 /* Culminating Sports appTests */ = {
+		4B42C0E22C08D5F000914158 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4B42C0C92C08D31E00914158 /* Culminating_Sports_appTests.swift */,
+				4B42C0BA2C08D31C00914158 /* Team.swift */,
 			);
-			path = "Culminating Sports appTests";
-			sourceTree = "<group>";
-		};
-		4B42C0D22C08D31E00914158 /* Culminating Sports appUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4B42C0D32C08D31E00914158 /* Culminating_Sports_appUITests.swift */,
-				4B42C0D52C08D31E00914158 /* Culminating_Sports_appUITestsLaunchTests.swift */,
-			);
-			path = "Culminating Sports appUITests";
-			sourceTree = "<group>";
-		};
-		4B42C0E22C08D5F000914158 /* Sports */ = {
-			isa = PBXGroup;
-			children = (
-				4B42C0BA2C08D31C00914158 /* ContentView.swift */,
-			);
-			path = Sports;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4B42C0E32C08D61800914158 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4B42C0E42C08D9A500914158 /* ListItemView.swift */,
+				4B42C0E62C08DC3F00914158 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -273,7 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B42C0BB2C08D31C00914158 /* ContentView.swift in Sources */,
+				4B42C0E52C08D9A500914158 /* ListItemView.swift in Sources */,
+				4B42C0E72C08DC3F00914158 /* DetailView.swift in Sources */,
+				4B42C0BB2C08D31C00914158 /* Team.swift in Sources */,
 				4B42C0B92C08D31C00914158 /* Culminating_Sports_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B42C0CA2C08D31E00914158 /* Culminating_Sports_appTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B42C0D42C08D31E00914158 /* Culminating_Sports_appUITests.swift in Sources */,
-				4B42C0D62C08D31E00914158 /* Culminating_Sports_appUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
