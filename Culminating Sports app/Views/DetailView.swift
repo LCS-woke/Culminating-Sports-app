@@ -14,15 +14,27 @@ struct DetailView: View {
             Image(item.image)
                 .resizable()
                 .scaledToFit()
-            
-            
-            .padding(.horizontal)
+                .padding(.horizontal)
             
             VStack {
+                HStack {
+                    Text(item.lcs)
+                    Spacer()
+                    Text(item.oppName)
+                    
+                    
+                }
                 
+                HStack {
+                    Text(item.lcsScore)
+                    Spacer()
+                    Text(item.oppScore)
+                    
+                }
             }
-            Text(item.description)
-            .padding(.horizontal)
+            
+            Text("Lcs Record: \(item.lcsRec)")
+                .padding(.horizontal)
         }
         .navigationTitle(item.name)
     }
@@ -30,6 +42,6 @@ struct DetailView: View {
 
 #Preview {
     NavigationStack {
-        Team(item: boysSecondTeamSoccer)
+        DetailView(item: boysSecondTeamSoccer)
     }
 }
