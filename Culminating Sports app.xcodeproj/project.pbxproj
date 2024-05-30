@@ -94,9 +94,10 @@
 		4B42C0B72C08D31C00914158 /* Culminating Sports app */ = {
 			isa = PBXGroup;
 			children = (
+				4B42C0E22C08D5F000914158 /* Sports */,
 				4B42C0B82C08D31C00914158 /* Culminating_Sports_appApp.swift */,
-				4B42C0BA2C08D31C00914158 /* ContentView.swift */,
 				4B42C0BC2C08D31E00914158 /* Assets.xcassets */,
+				4B42C0E32C08D61800914158 /* Views */,
 				4B42C0BE2C08D31E00914158 /* Preview Content */,
 			);
 			path = "Culminating Sports app";
@@ -125,6 +126,21 @@
 				4B42C0D52C08D31E00914158 /* Culminating_Sports_appUITestsLaunchTests.swift */,
 			);
 			path = "Culminating Sports appUITests";
+			sourceTree = "<group>";
+		};
+		4B42C0E22C08D5F000914158 /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				4B42C0BA2C08D31C00914158 /* ContentView.swift */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		4B42C0E32C08D61800914158 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
