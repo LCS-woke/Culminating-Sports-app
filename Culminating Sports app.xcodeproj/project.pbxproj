@@ -13,6 +13,7 @@
 		4B42C0C02C08D31E00914158 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B42C0BF2C08D31E00914158 /* Preview Assets.xcassets */; };
 		4B42C0E52C08D9A500914158 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0E42C08D9A500914158 /* ListItemView.swift */; };
 		4B42C0E72C08DC3F00914158 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0E62C08DC3F00914158 /* DetailView.swift */; };
+		4B42C0E92C0A4F0E00914158 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0E82C0A4F0E00914158 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		4B42C0CF2C08D31E00914158 /* Culminating Sports appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Culminating Sports appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B42C0E42C08D9A500914158 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		4B42C0E62C08DC3F00914158 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4B42C0E82C0A4F0E00914158 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				4B42C0E42C08D9A500914158 /* ListItemView.swift */,
 				4B42C0E62C08DC3F00914158 /* DetailView.swift */,
+				4B42C0E82C0A4F0E00914158 /* ListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				4B42C0E52C08D9A500914158 /* ListItemView.swift in Sources */,
 				4B42C0E72C08DC3F00914158 /* DetailView.swift in Sources */,
+				4B42C0E92C0A4F0E00914158 /* ListView.swift in Sources */,
 				4B42C0BB2C08D31C00914158 /* Team.swift in Sources */,
 				4B42C0B92C08D31C00914158 /* Culminating_Sports_appApp.swift in Sources */,
 			);
