@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Culminating_Sports_appApp: App {
+    
+    @State var currentTab: Int = 1
+    
     var body: some Scene {
         WindowGroup {
-            ListItemView(item: boysSecondTeamSoccer)
+            LandingView(currentTab: $currentTab)
         }
     }
 }

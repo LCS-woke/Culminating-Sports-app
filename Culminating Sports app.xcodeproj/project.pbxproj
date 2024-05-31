@@ -14,6 +14,7 @@
 		4B42C0E52C08D9A500914158 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0E42C08D9A500914158 /* ListItemView.swift */; };
 		4B42C0E72C08DC3F00914158 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0E62C08DC3F00914158 /* DetailView.swift */; };
 		4B42C0E92C0A4F0E00914158 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0E82C0A4F0E00914158 /* ListView.swift */; };
+		4B42C0EB2C0A539F00914158 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0EA2C0A539F00914158 /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4B42C0E42C08D9A500914158 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		4B42C0E62C08DC3F00914158 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		4B42C0E82C0A4F0E00914158 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		4B42C0EA2C0A539F00914158 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				4B42C0E42C08D9A500914158 /* ListItemView.swift */,
 				4B42C0E62C08DC3F00914158 /* DetailView.swift */,
 				4B42C0E82C0A4F0E00914158 /* ListView.swift */,
+				4B42C0EA2C0A539F00914158 /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B42C0EB2C0A539F00914158 /* LandingView.swift in Sources */,
 				4B42C0E52C08D9A500914158 /* ListItemView.swift in Sources */,
 				4B42C0E72C08DC3F00914158 /* DetailView.swift in Sources */,
 				4B42C0E92C0A4F0E00914158 /* ListView.swift in Sources */,

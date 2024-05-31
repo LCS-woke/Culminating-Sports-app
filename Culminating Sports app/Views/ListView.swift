@@ -25,9 +25,11 @@ struct ListView: View {
                         
         }
         
+        
+        
     }
 }
 
 #Preview {
-    ListView()
+    LandingView(currentTab: .constant(3))
 }
