@@ -19,24 +19,12 @@ struct LandingView: View {
                     Text("World Clock")
                 }
                 .tag(1)
-            Text("Alarm")
-                .tabItem {
-                    Image(systemName: "alarm.fill")
-                    Text("Alarm")
-                }
-                .tag(2)
             ListView()
                 .tabItem {
                     Image(systemName: "stopwatch.fill")
-                    Text("Stopwatch")
+                    Text("Sports")
                 }
-                .tag(3)
-            Text("Timer")
-                .tabItem {
-                    Image(systemName: "timer")
-                    Text("Timer")
-                }
-                .tag(4)
+                .tag(2)
                 
         }
         .accentColor(.red)
@@ -45,5 +33,5 @@ struct LandingView: View {
 }
 
 #Preview {
-    LandingView(currentTab: .constant(3))
+    LandingView(currentTab: .constant(2))
 }
