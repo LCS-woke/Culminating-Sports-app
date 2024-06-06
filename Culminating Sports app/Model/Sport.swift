@@ -26,8 +26,8 @@ let soccer = Sport(
     image: "Soccer",
     teams: [
         Sport.Team(name: "Junior Boys", image: nil),
-        Sport.Team(name: "Junior Boys", image: nil),
-        Sport.Team(name: "Junior Boys", image: nil),
+        Sport.Team(name: "Senior Boys", image: nil),
+        Sport.Team(name: "Junior Girls", image: nil),
     ]
 )
 
