@@ -19,7 +19,7 @@ struct LandingView: View {
                     Text("World Clock")
                 }
                 .tag(1)
-            ListView()
+            SportListView()
                 .tabItem {
                     Image(systemName: "stopwatch.fill")
                     Text("Sports")

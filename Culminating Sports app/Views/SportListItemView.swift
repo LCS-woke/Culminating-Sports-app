@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListItemView: View {
+struct SportListItemView: View {
     let item: Sport
     
     var body: some View {
@@ -34,6 +34,6 @@ struct ListItemView: View {
 }
 
 #Preview {
-    ListItemView(item: soccer)
+    SportListItemView(item: soccer)
         .padding()
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListView: View {
+struct SportListView: View {
     var body: some View {
         
         NavigationStack {
@@ -15,9 +15,9 @@ struct ListView: View {
             List(allSports) { currentSport in
                 
                 NavigationLink {
-                    DetailView(item: currentSport)
+                    SportDetailView(item: currentSport)
                 } label: {
-                    ListItemView(item: currentSport)
+                    SportListItemView(item: currentSport)
                 }
                 
             }
@@ -31,5 +31,5 @@ struct ListView: View {
 }
 
 #Preview {
-    LandingView(currentTab: .constant(3))
+    LandingView(currentTab: .constant(2))
 }
