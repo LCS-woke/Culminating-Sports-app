@@ -7,26 +7,23 @@
 
 import SwiftUI
 
-struct SportListView: View {
+struct SportsListView: View {
     var body: some View {
         
+        
         NavigationStack {
-            
-            List(allSports) { currentSport in
+            List(allSports) { sport in
                 
                 NavigationLink {
-                    SportDetailView(item: currentSport)
+                    TeamsListView(currentSport: sport)
                 } label: {
-                    SportListItemView(item: currentSport)
+                    SportListItemView(currentSport: sport)
                 }
                 
             }
             .navigationTitle("LCS Sports")
-                        
         }
-        
-        
-        
+                        
     }
 }
 

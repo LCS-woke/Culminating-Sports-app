@@ -17,9 +17,9 @@ struct Sport: Identifiable {
         let id = UUID()
         let name: String
         let image: String?
-        let games: [Games]
+        let games: [Game]
         
-        struct Games: Identifiable {
+        struct Game: Identifiable {
             let id = UUID()
             let oppName: String
             let date: String
@@ -39,14 +39,14 @@ let soccer = Sport(
             name: "Junior Boys",
             image: nil,
             games: [
-                Sport.Team.Games(
+                Sport.Team.Game(
                     oppName: "SMC",
                     date: "2024-05-01",
                     LCS: "LCS",
                     oppScore: "1",
                     lcsScore: "3"
                 ),
-                Sport.Team.Games(
+                Sport.Team.Game(
                     oppName: "UCC",
                     date: "2024-05-15",
                     LCS: "LCS",
@@ -59,7 +59,7 @@ let soccer = Sport(
             name: "Senior Boys",
             image: nil,
             games: [
-                Sport.Team.Games(
+                Sport.Team.Game(
                     oppName: "RSGC",
                     date: "2024-06-01",
                     LCS: "LCS",
@@ -72,7 +72,7 @@ let soccer = Sport(
             name: "Junior Girls",
             image: nil,
             games: [
-                Sport.Team.Games(
+                Sport.Team.Game(
                     oppName: "USMC",
                     date: "2024-06-15",
                     LCS: "LCS",

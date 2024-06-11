@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct SportListItemView: View {
-    let item: Sport
+    let currentSport: Sport
     
     var body: some View {
         
         HStack {
-            Image(item.image)
+            Image(currentSport.image)
                 .resizable()
                 .frame(width: 75, height: 75, alignment: .center)
                 .scaledToFit()
@@ -22,7 +22,7 @@ struct SportListItemView: View {
                 )
             
             VStack(alignment: .leading) {
-                Text(item.name)
+                Text(currentSport.name)
                     .font(.headline)
                     .multilineTextAlignment(.center)
                 
@@ -34,6 +34,6 @@ struct SportListItemView: View {
 }
 
 #Preview {
-    SportListItemView(item: soccer)
+    SportListItemView(currentSport: soccer)
         .padding()
 }
