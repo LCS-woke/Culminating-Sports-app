@@ -17,6 +17,7 @@
 		4B42C0EB2C0A539F00914158 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0EA2C0A539F00914158 /* LandingView.swift */; };
 		4B42C0F92C1886CA00914158 /* GamesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0F82C1886CA00914158 /* GamesListView.swift */; };
 		4B42C0FB2C18888E00914158 /* GameDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0FA2C18888E00914158 /* GameDetailView.swift */; };
+		4B42C0FD2C191B5700914158 /* ScoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B42C0FC2C191B5700914158 /* ScoreDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4B42C0EA2C0A539F00914158 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		4B42C0F82C1886CA00914158 /* GamesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListView.swift; sourceTree = "<group>"; };
 		4B42C0FA2C18888E00914158 /* GameDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailView.swift; sourceTree = "<group>"; };
+		4B42C0FC2C191B5700914158 /* ScoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				4B42C0EA2C0A539F00914158 /* LandingView.swift */,
 				4B42C0F82C1886CA00914158 /* GamesListView.swift */,
 				4B42C0FA2C18888E00914158 /* GameDetailView.swift */,
+				4B42C0FC2C191B5700914158 /* ScoreDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				4B42C0F92C1886CA00914158 /* GamesListView.swift in Sources */,
 				4B42C0E72C08DC3F00914158 /* TeamsListView.swift in Sources */,
 				4B42C0E92C0A4F0E00914158 /* SportsListView.swift in Sources */,
+				4B42C0FD2C191B5700914158 /* ScoreDetailView.swift in Sources */,
 				4B42C0BB2C08D31C00914158 /* Sport.swift in Sources */,
 				4B42C0B92C08D31C00914158 /* Culminating_Sports_appApp.swift in Sources */,
 				4B42C0FB2C18888E00914158 /* GameDetailView.swift in Sources */,
