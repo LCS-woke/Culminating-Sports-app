@@ -16,7 +16,8 @@ struct GamesListView: View {
             NavigationLink {
                 GameDetailView(game: currentGame)
             } label: {
-                Text("\(currentGame.date) - \(currentGame.oppName)")
+                ScoreDetailView(game: currentGame)
+
             }
             
         }

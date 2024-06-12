@@ -9,38 +9,49 @@ import SwiftUI
 
 struct ScoreDetailView: View {
     
+    let game: Sport.Team.Game
+    
     var body: some View {
         
         
             
         ZStack {
             RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                .fill(.gray)
+                .fill(.green)
+            
             VStack {
                 HStack {
-                    Text("LCS")
-                        .foregroundColor(.black)
+                    Image("LCS")
+                        .resizable()
+                        .frame(width: 40, height: 50)
+                        
+                    Text(game.LCS)
+                        .foregroundColor(.red)
                         .font(.caption)
                     
                     VStack {
-                        Text("3-0")
+                        Text("\(game.lcsScore) - \(game.oppScore)")
                             .foregroundColor(.purple)
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        Text("2023,01,01")
+                        Text(game.date)
                             .foregroundColor(.black)
                             .font(.caption)
 
                         
                     }
-                    Text("RSGC")
+                    Text(game.oppName)
                         .foregroundColor(.black)
                         .font(.caption)
+                    Image("Opponent")
+                        .resizable()
+                        .frame(width: 40, height: 50)
                 }
             }
             }
+        .ignoresSafeArea()
         }
     }
 
 #Preview {
-    ScoreDetailView()
+    ScoreDetailView(game: soccer.teams.first!.games.first!)
 }

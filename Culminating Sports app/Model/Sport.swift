@@ -11,6 +11,8 @@ struct Sport: Identifiable {
     let id = UUID()
     let name: String
     let image: String
+    let lcsImage: String
+    let oppImage: String
     let teams: [Team]
     
     struct Team: Identifiable {
@@ -34,6 +36,8 @@ struct Sport: Identifiable {
 let soccer = Sport(
     name: "Soccer",
     image: "Soccer",
+    lcsImage: "LCS",
+    oppImage: "Opponent",
     teams: [
         Sport.Team(
             name: "Junior Boys",
@@ -88,6 +92,8 @@ let soccer = Sport(
 let hockey = Sport(
     name: "Hockey",
     image: "Hockey",
+    lcsImage: "LCS",
+    oppImage: "Opponent",
     teams: [
         Sport.Team(
             name: "Junior Boys",
@@ -129,6 +135,8 @@ let hockey = Sport(
 let basketball = Sport(
     name: "Basketball",
     image: "Basketball",
+    lcsImage: "LCS",
+    oppImage: "Opponent",
     teams: [
         Sport.Team(
             name: "Junior Boys",
@@ -183,6 +191,8 @@ let basketball = Sport(
 let rugby = Sport(
     name: "Rugby",
     image: "Rugby",
+    lcsImage: "LCS",
+    oppImage: "Opponent",
     teams: [
         Sport.Team(
             name: "Junior Boys",
@@ -224,6 +234,8 @@ let rugby = Sport(
 let frisbee = Sport(
     name: "Frisbee",
     image: "Frisbee",
+    lcsImage: "LCS",
+    oppImage: "Opponent",
     teams: [
         Sport.Team(
             name: "Junior",

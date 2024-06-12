@@ -12,7 +12,38 @@ struct GameDetailView: View {
     let game: Sport.Team.Game
     
     var body: some View {
-        Text(game.date)
+        VStack {
+            Image("LCS")
+            Spacer()
+            VStack {
+                HStack {
+                    Image("LCS")
+                        .resizable()
+                        .frame(width: 40, height: 50)
+                    Text(game.LCS)
+                        .foregroundColor(.red)
+                        .font(.caption)
+                    
+                    VStack {
+                        Text("\(game.lcsScore) - \(game.oppScore)")
+                            .foregroundColor(.purple)
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        Text(game.date)
+                            .foregroundColor(.black)
+                            .font(.caption)
+                        
+                        
+                    }
+                    Text(game.oppName)
+                        .foregroundColor(.black)
+                        .font(.caption)
+                    Image("Opponent")
+                        .resizable()
+                        .frame(width: 40, height: 50)
+                }
+                Spacer()
+            }
+        }
     }
 }
 
