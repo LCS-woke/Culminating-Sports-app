@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct SportsListView: View {
+    
+    
+    @State private var allSports: [Sport] = exampleSports
+    
     var body: some View {
         
         
         NavigationStack {
-            List(allSports) { sport in
+            List($allSports) { $sport in
                 
                 NavigationLink {
-                    TeamsListView(currentSport: sport)
+                    TeamsListView(currentSport: $sport)
                 } label: {
                     SportListItemView(currentSport: sport)
                 }

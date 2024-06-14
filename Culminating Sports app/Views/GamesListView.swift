@@ -9,32 +9,40 @@ import SwiftUI
 
 struct GamesListView: View {
     
-    let games: [Sport.Team.Game]
+    @Binding var games: [Sport.Team.Game]
+    @State private var addNewGameSheetIsShowing = false
     
     var body: some View {
         
         NavigationView {
-                    List(games) { currentGame in
-                        NavigationLink {
-                            GameDetailView(game: currentGame)
-                        } label: {
-                            ScoreDetailView(game: currentGame)
-                        }
-                    }
-                    .navigationBarTitle("Games")
-                    .toolbar {
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            Button(action: {
-                                // Action for trailing button
-                            }) {
-                                Image(systemName: "plus")
-                            }
-                        }
+            List(games) { currentGame in
+                NavigationLink {
+                    GameDetailView(game: currentGame)
+                } label: {
+                    ScoreDetailView(game: currentGame)
+                }
+            }
+            .navigationBarTitle("Games")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        addNewGameSheetIsShowing = true
+                    }) {
+                        Image(systemName: "plus")
                     }
                 }
             }
+            .sheet(isPresented: $addNewGameSheetIsShowing) {
+                AddGameView(
+                    isShowing: $addNewGameSheetIsShowing,
+                    games: <#Binding<[Sport.Team.Game]>#>
+                )
+            }
         }
+    }
+}
 
-        #Preview {
-            GamesListView(games: soccer.teams.first!.games)
-        }
+
+#Preview {
+    GamesListView(games: soccer.teams.first!.games)
+}

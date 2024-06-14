@@ -8,32 +8,33 @@
 import SwiftUI
 
 struct TeamsListView: View {
-    let currentSport: Sport
-      var body: some View {
-          VStack {
-              Image(currentSport.image)
-                  .resizable()
-                  .scaledToFit()
-                  .padding(.horizontal)
-
-              List(currentSport.teams) { team in
-                  NavigationLink {
-                      GamesListView(games: team.games)
-                  } label: {
-                      Text(team.name)
-                  }
-
-              }
-              
-              
-              
-          }
-          .navigationTitle(currentSport.name)
-      }
-  }
+    @Binding var currentSport: Sport
+    
+    var body: some View {
+        VStack {
+            Image(currentSport.image)
+                .resizable()
+                .scaledToFit()
+                .padding(.horizontal)
+            
+            List($currentSport.$teams) { $team in
+                NavigationLink {
+                    GamesListView(games: $team.games)
+                } label: {
+                    Text(team.name)
+                }
+                
+            }
+            
+            
+            
+        }
+        .navigationTitle(currentSport.name)
+    }
+}
 
 #Preview {
     NavigationStack {
-        TeamsListView(currentSport: soccer)
+        TeamsListView(currentSport: Binding.constant(soccer))
     }
 }

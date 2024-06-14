@@ -15,9 +15,15 @@ struct AddGameView: View {
     @State private var lcsScore: String = ""
     @State private var date: String = ""
     
+    // Dismiss Sheet 
+    @Binding var isShowing: Bool
+    
+    // Obtain a reference to the source of truth for games played
+    @Binding var games: [Sport.Team.Game]
+    
     var body: some View {
         
-        VStack {
+        NavigationStack {
             
             Form {
                 
@@ -33,12 +39,26 @@ struct AddGameView: View {
                 
             }
             
-            
+            .navigationTitle("Add Game")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button {
+                        // Add the new book review
+                        // ... and dismiss the sheet
+                        isShowing = false
+                    } label: {
+                        Text("Add")
+                    }
+                }
+            }
         }
         
     }
 }
 
 #Preview {
-    AddGameView()
+    AddGameView(isShowing: Binding.constant(true),
+                games: Binding.constant([])
+    )
 }

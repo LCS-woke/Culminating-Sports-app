@@ -274,7 +274,7 @@ let frisbee = Sport(
 )
 
 
-let allSports = [
+let exampleSports = [
    soccer,
    hockey,
    basketball,
