@@ -12,20 +12,29 @@ struct GamesListView: View {
     let games: [Sport.Team.Game]
     
     var body: some View {
-        List(games) { currentGame in
-            NavigationLink {
-                GameDetailView(game: currentGame)
-            } label: {
-                ScoreDetailView(game: currentGame)
-
+        
+        NavigationView {
+                    List(games) { currentGame in
+                        NavigationLink {
+                            GameDetailView(game: currentGame)
+                        } label: {
+                            ScoreDetailView(game: currentGame)
+                        }
+                    }
+                    .navigationBarTitle("Games")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: {
+                                // Action for trailing button
+                            }) {
+                                Image(systemName: "plus")
+                            }
+                        }
+                    }
+                }
             }
-            
         }
-        
-        
-    }
-}
 
-#Preview {
-    GamesListView(games: soccer.teams.first!.games)
-}
+        #Preview {
+            GamesListView(games: soccer.teams.first!.games)
+        }
